@@ -68,7 +68,7 @@ Gostou do projeto? Entre em contato comigo pelo Twitter:
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/Mentus99/Card-romance/blob/main/LICENSE.txt) para mais detalhes.
 
 ---
 
