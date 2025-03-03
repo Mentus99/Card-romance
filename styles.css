@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content {
+    color: #333;
+    padding: 0 10px;
+}
+
+.date {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.message {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.emoji-container span {
+    font-size: 24px;
+}
+
+.counter {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.counter p {
+    margin: 5px 0;
+}
+
+#time-together {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+iframe {
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .date {
+        font-size: 16px;
+    }
+    .message {
+        font-size: 14px;
+    }
+    .emoji-container span {
+        font-size: 20px;
+    }
+    iframe {
+        height: 120px;
+    }
+}

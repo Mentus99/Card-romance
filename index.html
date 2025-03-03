@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão para Minha Esposa ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Para Minha Esposa ❤️</h1>
+        <div class="image-container">
+            <img src="sua-imagem.jpg" alt="Nossa Foto">
+        </div>
+        <div class="content">
+            <p class="date">📅 Data Especial: 09/03/2017</p>
+            <p class="message">💌 Mensagem: Você é a pessoa mais incrível da minha vida. Te amo mais do que tudo! ❤️</p>
+            <div class="emoji-container">
+                <span>😍</span>
+                <span>💖</span>
+                <span>🎉</span>
+                <span>🌹</span>
+            </div>
+            <div class="counter">
+                <p>Estamos juntos há:</p>
+                <p id="time-together">Carregando...</p>
+            </div>
+            <!-- Player do Spotify -->
+            <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/1SOClUWhOi8vHZYMz3GluK?utm_source=generator&theme=0"
+                width="100%"
+                height="152"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        // Data de início do relacionamento (09/03/2017)
+        const startDate = new Date('2017-03-09T00:00:00');
+
+        // Função para atualizar o contador
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate; // Diferença em milissegundos
+
+            // Calcula anos, dias, horas, minutos e segundos
+            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+            const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Exibe o contador
+            document.getElementById('time-together').innerHTML = `
+                ${years} ano(s), ${days} dia(s), ${hours} hora(s), ${minutes} minuto(s) e ${seconds} segundo(s)
+            `;
+        }
+
+        // Atualiza o contador a cada segundo
+        setInterval(updateCounter, 1000);
+        updateCounter(); // Inicia o contador imediatamente
+    </script>
+</body>
+</html>
