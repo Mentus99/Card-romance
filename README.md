@@ -1,18 +1,18 @@
-# Cartão para Minha Esposa ❤️
+# Cartão Romântico 💌
 
-Um cartão digital especial para expressar todo o amor e carinho pela minha esposa. Este projeto inclui uma mensagem personalizada, um contador de tempo do nosso relacionamento e uma música especial no Spotify.
+Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa amada. Este projeto inclui uma mensagem personalizada, um contador de tempo do relacionamento e uma música especial no Spotify.
 
 ---
 
 ## 🚀 Como Visualizar o Projeto
 
 1. **Acesse o GitHub Pages:**
-   - O projeto está hospedado no GitHub Pages. Acesse [aqui](https://github.com/Mentus99/Card-romance) para visualizar.
+   - O projeto está hospedado no GitHub Pages. Acesse [aqui](https://mentus99.github.io/Card-romance) para visualizar.
 
 2. **Executar Localmente:**
    - Clone o repositório:
      ```bash
-     git clone https://github.com/Mentus99/Card-romance
+     git clone https://github.com/Mentus99/Card-romance.git
      ```
    - Abra o arquivo `index.html` no seu navegador.
 
@@ -29,10 +29,26 @@ Um cartão digital especial para expressar todo o amor e carinho pela minha espo
 
 ## ✨ Funcionalidades
 
-- **Mensagem Personalizada**: Uma mensagem carinhosa para a minha esposa.
-- **Contador de Tempo**: Calcula o tempo exato que estamos juntos.
+- **Mensagem Personalizada**: Uma mensagem carinhosa para a sua pessoa amada.
+- **Contador de Tempo**: Calcula o tempo exato que vocês estão juntos (ou personalize para uma data especial).
 - **Player de Música**: Integração com o Spotify para tocar uma música especial.
 - **Design Responsivo**: Funciona perfeitamente em dispositivos móveis e desktop.
+
+---
+
+## 🎨 Como Personalizar
+
+1. **Mensagem:**
+   - Edite o arquivo `index.html` e altere o texto dentro da tag `<p class="message">` para a sua mensagem personalizada.
+
+2. **Data Especial:**
+   - No arquivo `index.html`, altere a data dentro da tag `<p class="date">` para a data do seu relacionamento ou outra data especial.
+
+3. **Música do Spotify:**
+   - No arquivo `index.html`, substitua o link do iframe do Spotify pelo link da sua música preferida.
+
+4. **Imagem:**
+   - Substitua o arquivo `sua-imagem.jpg` pela imagem que deseja usar.
 
 ---
 
@@ -57,3 +73,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 
 Feito com ❤️ por [Gabryel](https://x.com/G2bryel).
+
+---
+
+🔗 **Link do Repositório:** [https://github.com/Mentus99/Card-romance](https://github.com/Mentus99/Card-romance)
