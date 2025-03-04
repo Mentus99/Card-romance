@@ -9,15 +9,23 @@
 <body>
     <div class="card">
         <h1>Para Minha Pessoa Amada ❤️</h1>
-        <div class="image-container">
-            <!-- PASSO 1: Substitua "sua-imagem.jpeg" pelo nome do arquivo da sua imagem -->
-            <img src="sua-imagem.jpeg" alt="Nossa Foto">
+
+        <!-- Carrossel de Imagens -->
+        <div class="carousel">
+            <div class="carousel-images">
+                <!-- Adicione suas imagens aqui -->
+                <img src="imagem1.jpeg" alt="Imagem 1" class="carousel-image active">
+                <img src="imagem2.jpeg" alt="Imagem 2" class="carousel-image">
+                <img src="imagem3.jpeg" alt="Imagem 3" class="carousel-image">
+                <img src="imagem4.jpeg" alt="Imagem 4" class="carousel-image">
+            </div>
         </div>
+
         <div class="content">
-            <!-- PASSO 2: Altere a data abaixo para a data especial do seu relacionamento e depois apague o texto "📅 Data Especial:"-->
+            <!-- PASSO 2: Altere a data abaixo para a data especial do seu relacionamento e apague o texto "📅 Data Especial:" -->
             <p class="date">📅 Data Especial: 09/03/2017</p>
 
-            <!-- PASSO 3: Escreva a sua mensagem personalizada abaixo e depois apague o texto "💌 Mensagem:" -->
+            <!-- PASSO 3: Escreva a sua mensagem personalizada abaixo e apague o texto "💌 Mensagem:" -->
             <p class="message">💌 Mensagem: Você é a pessoa mais incrível da minha vida. Te amo mais do que tudo! ❤️</p>
 
             <div class="emoji-container">
@@ -31,7 +39,7 @@
                 <p>Estamos juntos há:</p>
                 <p id="time-together">Carregando...</p>
             </div>
-            <!-- PASSO 5: Substitua o link abaixo pelo link da sua música no Spotify. Lembre-se de incorporar a faixa para ficar no estilo desejado.-->
+            <!-- PASSO 5: Substitua o link abaixo pelo link da sua música no Spotify -->
             <iframe
                 style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/1SOClUWhOi8vHZYMz3GluK?utm_source=generator&theme=0"
@@ -46,7 +54,7 @@
     </div>
 
     <script>
-        // PASSO 6: Altere a data abaixo para a data de início do seu relacionamento
+        // Código do contador de tempo
         const startDate = new Date('2017-03-09T00:00:00');
 
         function updateCounter() {
@@ -66,6 +74,27 @@
 
         setInterval(updateCounter, 1000);
         updateCounter();
+
+        // Código do carrossel de imagens
+        const carouselImages = document.querySelectorAll('.carousel-image');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            carouselImages.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % carouselImages.length;
+            showImage(currentIndex);
+        }
+
+        // Troca automática de imagens a cada 2 segundos
+        setInterval(nextImage, 2000);
+
+        // Mostra a primeira imagem ao carregar a página
+        showImage(currentIndex);
     </script>
 </body>
 </html>

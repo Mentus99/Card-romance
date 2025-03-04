@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -22,12 +23,6 @@ body {
 h1 {
     color: #e74c3c;
     font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.image-container img {
-    width: 100%;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
 
@@ -83,25 +78,26 @@ iframe {
     width: 100%;
 }
 
-/* Ajustes para telas pequenas */
-@media (max-width: 480px) {
-    .card {
-        padding: 15px;
-        max-width: 90%;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    .date {
-        font-size: 16px;
-    }
-    .message {
-        font-size: 14px;
-    }
-    .emoji-container span {
-        font-size: 20px;
-    }
-    iframe {
-        height: 120px;
-    }
+/* Estilo do carrossel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.carousel-image.active {
+    display: block;
 }
