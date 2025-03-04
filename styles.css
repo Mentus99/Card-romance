@@ -1,7 +1,7 @@
 /* Estilos gerais */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #000; /* Fundo preto */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +9,9 @@ body {
     margin: 0;
 }
 
+/* Estilo do card */
 .card {
-    background-color: #fff;
+    background: linear-gradient(145deg, var(--cor1, #ff6f61), var(--cor2, #ffcc00)); /* Duas cores personalizáveis */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -18,16 +19,52 @@ body {
     width: 100%;
     text-align: center;
     margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito metálico no card */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    transform: rotate(45deg);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Fundo neon personalizável */
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--neon, rgba(255, 111, 97, 0.1)); /* Cor neon personalizável */
+    border-radius: 15px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Conteúdo do card (texto, imagens, etc.) */
+.card-content {
+    position: relative;
+    z-index: 2;
 }
 
 h1 {
-    color: #e74c3c;
+    color: #fff; /* Texto branco */
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 .content {
-    color: #333;
+    color: #fff; /* Texto branco */
     padding: 0 10px;
 }
 
@@ -55,9 +92,9 @@ h1 {
 
 .counter {
     font-size: 18px;
-    color: #333;
+    color: #fff; /* Texto branco */
     margin: 20px 0;
-    background-color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
     padding: 10px;
     border-radius: 8px;
 }
@@ -68,7 +105,7 @@ h1 {
 
 #time-together {
     font-weight: bold;
-    color: #e74c3c;
+    color: var(--cor1, #ff6f61); /* Cor personalizável */
 }
 
 iframe {
