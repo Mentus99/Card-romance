@@ -54,8 +54,8 @@ Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa
 
 ## 📸 Captura de Tela
 
-![Captura de Tela do Cartão](sua-imagem.jpg) <!-- Substitua pelo caminho da imagem -->
-
+Exemplo de Captura de Tela: (Substitua pelo caminho da sua imagem)
+![Captura de Tela do Cartão](imagem1.jpg) <!-- Substitua pelo caminho da imagem -->
 ---
 
 ## 📫 Contato
