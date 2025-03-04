@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão Romântico 💌</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* PASSO 1: Personalize as cores do card e do fundo neon */
+        :root {
+            --cor1: #ff6f61; /* Cor 1 (vermelho neon) - Altere para a cor desejada */
+            --cor2: #ffcc00; /* Cor 2 (amarelo neon) - Altere para a cor desejada */
+            --neon: rgba(255, 111, 97, 0.1); /* Cor neon com transparência - Altere para a cor desejada */
+        }
+    </style>
 </head>
 <body>
     <div class="card">
@@ -13,7 +21,7 @@
         <!-- Carrossel de Imagens -->
         <div class="carousel">
             <div class="carousel-images">
-                <!-- Adicione suas imagens aqui. Lembre-se de alterar o tipo do arquivo: (JPEG;PNG;JPG)-->
+                <!-- PASSO 2: Adicione suas imagens aqui. Lembre-se de alterar o nome dos arquivos e o tipo (JPEG; PNG; JPG) -->
                 <img src="imagem1.jpg" alt="Imagem 1" class="carousel-image active">
                 <img src="imagem2.jpg" alt="Imagem 2" class="carousel-image">
                 <img src="imagem3.jpg" alt="Imagem 3" class="carousel-image">
@@ -22,14 +30,14 @@
         </div>
 
         <div class="content">
-            <!-- PASSO 2: Altere a data abaixo para a data especial do seu relacionamento e apague o texto "📅 Data Especial:" -->
+            <!-- PASSO 3: Altere a data abaixo para a data especial do seu relacionamento e apague o texto "📅 Data Especial:" -->
             <p class="date">📅 Data Especial: 09/03/2010</p>
 
-            <!-- PASSO 3: Escreva a sua mensagem personalizada abaixo e apague o texto "💌 Mensagem:" -->
+            <!-- PASSO 4: Escreva a sua mensagem personalizada abaixo e apague o texto "💌 Mensagem:" -->
             <p class="message">💌 Mensagem: Você é a pessoa mais incrível da minha vida. Te amo mais do que tudo! ❤️</p>
 
             <div class="emoji-container">
-                <!-- PASSO 4: Adicione ou remova emojis abaixo para personalizar -->
+                <!-- PASSO 5: Adicione ou remova emojis abaixo para personalizar -->
                 <span>😍</span>
                 <span>💖</span>
                 <span>🎉</span>
@@ -39,7 +47,7 @@
                 <p>Estamos juntos há:</p>
                 <p id="time-together">Carregando...</p>
             </div>
-            <!-- PASSO 5: Substitua o link abaixo pelo link da sua música no Spotify -->
+            <!-- PASSO 6: Substitua o link abaixo pelo link da sua música no Spotify -->
             <iframe
                 style="border-radius:12px"
                 src="https://open.spotify.com/embed/track/1SOClUWhOi8vHZYMz3GluK?utm_source=generator&theme=0"
@@ -55,6 +63,7 @@
 
     <script>
         // Código do contador de tempo
+        // PASSO 7: Altere a data abaixo para a data de início do seu relacionamento
         const startDate = new Date('2010-03-09T00:00:00');
 
         function updateCounter() {
