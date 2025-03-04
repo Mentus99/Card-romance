@@ -11,7 +11,7 @@ body {
 
 /* Estilo do card */
 .card {
-    background: linear-gradient(145deg, var(--cor1, #ff6f61), var(--cor2, #ffcc00)); /* Duas cores personalizáveis */
+    background: linear-gradient(145deg, var(--cor1, #eb1400), var(--cor2, #540199)); /* Duas cores personalizáveis */
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
