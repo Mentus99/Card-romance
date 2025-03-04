@@ -72,7 +72,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 ---
 
-Feito com ❤️ por [Gabryel](https://x.com/G2bryel).
+Feito com ❤️ por [Mendes](https://x.com/G2bryel).
 
 ---
 
