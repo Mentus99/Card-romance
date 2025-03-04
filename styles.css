@@ -105,7 +105,7 @@ h1 {
 
 #time-together {
     font-weight: bold;
-    color: var(--cor1, #ff6f61); /* Cor personalizável */
+    color: var(--cor1, #ffffff); /* Cor personalizável */
 }
 
 iframe {
