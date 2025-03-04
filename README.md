@@ -1,6 +1,6 @@
 # Cartão Romântico 💌
 
-Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa amada. Este projeto inclui uma mensagem personalizada, um contador de tempo do relacionamento e uma música especial no Spotify.
+Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa amada. Este projeto inclui uma mensagem personalizada, um contador de tempo do relacionamento, um carrossel de imagens que passa automaticamente a cada 4 segundos e uma música especial no Spotify.
 
 ---
 
@@ -22,7 +22,7 @@ Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa
 
 - **HTML5**: Estrutura do cartão.
 - **CSS3**: Estilização e design responsivo.
-- **JavaScript**: Contador de tempo do relacionamento.
+- **JavaScript**: Contador de tempo do relacionamento e carrossel de imagens automático.
 - **Spotify Embed**: Player de música integrado.
 
 ---
@@ -31,6 +31,7 @@ Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa
 
 - **Mensagem Personalizada**: Uma mensagem carinhosa para a sua pessoa amada.
 - **Contador de Tempo**: Calcula o tempo exato que vocês estão juntos (ou personalize para uma data especial).
+- **Carrossel de Imagens**: As imagens passam automaticamente a cada 4 segundos.
 - **Player de Música**: Integração com o Spotify para tocar uma música especial.
 - **Design Responsivo**: Funciona perfeitamente em dispositivos móveis e desktop.
 
@@ -47,8 +48,13 @@ Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa
 3. **Música do Spotify:**
    - No arquivo `index.html`, substitua o link do iframe do Spotify pelo link da sua música preferida.
 
-4. **Imagem:**
-   - Substitua o arquivo `sua-imagem.jpg` pela imagem que deseja usar.
+4. **Imagens do Carrossel:**
+   - Adicione quantas imagens quiser na pasta do projeto e atualize o arquivo `index.html` com os nomes das imagens. Exemplo:
+     ```html
+     <img src="imagem1.jpg" alt="Imagem 1" class="carousel-image active">
+     <img src="imagem2.jpg" alt="Imagem 2" class="carousel-image">
+     <img src="imagem3.jpg" alt="Imagem 3" class="carousel-image">
+     ```
 
 ---
 
@@ -56,6 +62,7 @@ Um cartão digital especial para expressar todo o amor e carinho pela sua pessoa
 
 Exemplo de Captura de Tela: (Substitua pelo caminho da sua imagem)
 ![Captura de Tela do Cartão](imagem1.jpg) <!-- Substitua pelo caminho da imagem -->
+
 ---
 
 ## 📫 Contato
