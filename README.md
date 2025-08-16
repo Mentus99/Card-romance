@@ -79,8 +79,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 ---
 
-Feito com ❤️ por [Mendes](https://x.com/G2bryel).
-
----
-
 🔗 **Link do Repositório:** [https://github.com/Mentus99/Card-romance](https://github.com/Mentus99/Card-romance)
